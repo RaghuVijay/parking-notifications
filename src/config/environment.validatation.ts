@@ -11,4 +11,5 @@ export default Joi.object({
     .valid(587, 465, 25) // Adding common SMTP port validation
     .default(587) // Default to 587 if not provided
     .required(),
+  AXIOS_PARKING_USER_MANAGEMENT_HOST: Joi.string().required(),
 });
